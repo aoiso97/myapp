@@ -41,6 +41,9 @@ nav {
 .jumbotron hr {
     background-color: #F6F6F4;
 }
+.jumbotron .lead {
+    font-weight: 200;
+}
 .main-div {
     position: relative;
     top: 56px;
@@ -54,9 +57,6 @@ nav {
     margin-bottom: 50px;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     text-align: center;
-}#appSummary p {
-    font-size: 1.25rem;
-    font-weight: 300;
 }
 #footer {
     margin-top: 50px;
