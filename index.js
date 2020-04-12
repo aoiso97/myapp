@@ -1,3 +1,5 @@
 $("#loginButton").click(function () {
-    $(".alert").show();
+    if ($(".alert").css("display") == "none") {
+        $(".alert").show();
+    }
 });
