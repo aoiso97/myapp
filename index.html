@@ -1,107 +1,91 @@
-<!doctype html>
-<html lang="ja">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-
-        <link rel="stylesheet" href="index.css">
-
-        <title>MyApp</title>
-
-    </head>
-    <body>
-        <nav class="navbar navbar-expand-md navbar-light">
-            <a class="navbar-brand" href="#">MyApp</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarText">
-                <ul class="navbar-nav mr-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">Home<span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#navAbout">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#footer">Download The App</a>
-                    </li>
-                </ul>
-                <form class="form-inline">
-                    <input class="form-control mr-sm-2" type="email" placeholder="Email" aria-label="Search">
-                    <input class="form-control mr-sm-2" type="password" placeholder="Password" aria-label="Search">
-                    <button class="btn btn-outline-success my-2 my-sm-0" id="loginButton" type="submit">Login</button>
-                </form>
-            </div>
-        </nav>
-
-        <div class="alert alert-warning alert-dismissible fade show main-div" role="alert">
-            <strong>Login failed!</strong> Email or password may be incorrect.
-            <button type="button" class="close" id="closeButton" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-            </button>
-        </div>
-
-        <div class="jumbotron main-div">
-            <h1 class="display-4">Welcome!</h1>
-            <p class="lead">This is the introduction page to my app. The page will be improved sequentially. Take your time and enjoy!</p>
-            <hr class="my-4">
-            <p id="knowMore">Want to know more?</p>
-            <a class="btn btn-light btn-lg" href="#" role="button">View more</a>
-        </div>
-
-        <div id="navAbout"></div>
-        <div class="container main-div">
-            <div id="appSummary">
-                <h1>What Is This App?</h1>
-                <p>Summary of this app's awesomeness</p>
-            </div>
-        </div>
-
-        <div class="container main-div">
-            <div class="card-deck">
-                <div class="card">
-                    <img class="card-img-top" src="https://images.unsplash.com/photo-1571424768427-7b9aa9db7444?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1502&q=80" alt="No Image">
-                    <div class="card-body">
-                        <h5 class="card-title">Coming soon...</h5>
-                        <p class="card-text">Sorry. We are under construction.<br></p>
-                        <a href="#" class="btn">See more</a>
-                    </div>
-                </div>
-                <div class="card">
-                    <img class="card-img-top" src="https://images.unsplash.com/photo-1516542076529-1ea3854896f2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1400&q=60" alt="No Image">
-                    <div class="card-body">
-                        <h5 class="card-title">Coming soon...</h5>
-                        <p class="card-text">Sorry. We are under construction.<br></p>
-                        <a href="https://twitter.com/yozan626?s=09" class="btn">See more</a>
-                    </div>
-                </div>
-                <div class="card">
-                    <img class="card-img-top" src="https://images.unsplash.com/photo-1519336209495-635a77ec5f09?ixlib=rb-1.2.1&auto=format&fit=crop&w=2250&q=80" alt="No Image">
-                    <div class="card-body">
-                        <h5 class="card-title">Coming soon...</h5>
-                        <p class="card-text">Sorry. We are under construction.</p>
-                        <a href="https://twitter.com/hemu10221?s=09" class="btn">See more</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="main-div" id="footer">
-            <h2>Download for iOS</h2>
-            <p>I hope you enjoy this app!</p>
-            <a href="https://www.apple.com/jp/ios/app-store/">
-                <img src="http://www.completewebdevelopercourse.com/content/5-bootstrap/App-Store-Icon.png">
-            </a>
-        </div>
-
-        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-        <script src="index.js"></script>
-
-    </body>
-
-</html>
+nav {
+    position: fixed;
+    width: 100%;
+    background-color: #EAEAEA;
+}
+.alert {
+    display: none;
+    position: fixed;
+    z-index: 10;
+    top: 56px;
+    width: 100%;
+    margin-bottom: 0;
+    text-align: center;
+}
+.card-body {
+    border-top: 1px solid;
+    border-color: #EEEEEE;
+}
+.card-body a {
+    background-color: #a99e93;
+    color: white;
+}
+.card-deck .card {
+    margin-right: 10px;
+    margin-left: 10px;
+}
+.jumbotron {
+    border-radius: 0;
+    background-image: url("https://images.unsplash.com/photo-1531986362435-16b427eb9c26?ixlib=rb-1.2.1&auto=format&fit=crop&w=1650&q=80");
+    background-size: cover;
+    color: #F6F6F4;
+    text-align: center;
+}
+.jumbotron h1 {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 300;
+}
+.jumbotron a {
+    opacity: 0.90;
+}
+.jumbotron hr {
+    background-color: #F6F6F4;
+}
+.jumbotron .lead {
+    font-weight: 200;
+}
+.main-div {
+    position: relative;
+    top: 56px;
+}
+.navbar {
+    position: fixed;
+    z-index: 10;
+}
+#appSummary {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-align: center;
+}
+#footer {
+    margin-top: 50px;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    background-color: #ced1d3;
+    text-align: center;
+}
+#footer img {
+    width: 200px;
+    height: 70px;
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+}
+#footer img:hover {
+    -webkit-animation: bounce 2s ease-in-out;
+    animation: bounce 2s ease-in-out;
+}
+#knowMore {
+    color: white;
+    font-style: italic;
+    font-weight: bold;
+}
+@-webkit-keyframes bounce {
+    5%  { -webkit-transform: scale(1.1, .8); }
+    10% { -webkit-transform: scale(.8, 1.1) translateY(-5px); }
+    15% { -webkit-transform: scale(1, 1); }
+}
+@keyframes bounce {
+    5%  { transform: scale(1.1, .8); }
+    10% { transform: scale(.8, 1.1) translateY(-5px); }        15% { transform: scale(1, 1); }
+}
