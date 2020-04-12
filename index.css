@@ -1,0 +1,91 @@
+nav {
+    position: fixed;
+    width: 100%;
+    background-color: #EAEAEA;
+}
+.alert {
+    display: none;
+    position: fixed;
+    z-index: 10;
+    top: 56px;
+    width: 100%;
+    margin-bottom: 0;
+    text-align: center;
+}
+.card-body {
+    border-top: 1px solid;
+    border-color: #EEEEEE;
+}
+.card-body a {
+    background-color: #a99e93;
+    color: white;
+}
+.card-deck .card {
+    margin-right: 10px;
+    margin-left: 10px;
+}
+.jumbotron {
+    border-radius: 0;
+    background-image: url("https://images.unsplash.com/photo-1531986362435-16b427eb9c26?ixlib=rb-1.2.1&auto=format&fit=crop&w=1650&q=80");
+    background-size: cover;
+    color: #F6F6F4;
+    text-align: center;
+}
+.jumbotron h1 {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 300;
+}
+.jumbotron a {
+    opacity: 0.90;
+}
+.jumbotron hr {
+    background-color: #F6F6F4;
+}
+.main-div {
+    position: relative;
+    top: 56px;
+}
+.navbar {
+    position: fixed;
+    z-index: 10;
+}
+#appSummary {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-align: center;
+}#appSummary p {
+    font-size: 1.25rem;
+    font-weight: 300;
+}
+#footer {
+    margin-top: 50px;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    background-color: #ced1d3;
+    text-align: center;
+}
+#footer img {
+    width: 200px;
+    height: 70px;
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+}
+#footer img:hover {
+    -webkit-animation: bounce 2s ease-in-out;
+    animation: bounce 2s ease-in-out;
+}
+#knowMore {
+    color: white;
+    font-style: italic;
+    font-weight: bold;
+}
+@-webkit-keyframes bounce {
+    5%  { -webkit-transform: scale(1.1, .8); }
+    10% { -webkit-transform: scale(.8, 1.1) translateY(-5px); }
+    15% { -webkit-transform: scale(1, 1); }
+}
+@keyframes bounce {
+    5%  { transform: scale(1.1, .8); }
+    10% { transform: scale(.8, 1.1) translateY(-5px); }        15% { transform: scale(1, 1); }
+}
