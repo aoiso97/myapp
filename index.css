@@ -75,6 +75,15 @@ nav {
     -webkit-animation: bounce 2s ease-in-out;
     animation: bounce 2s ease-in-out;
 }
+#introductionMovie {
+    text-align: center;
+}
+#introductionMovie iframe {
+    width: 100%;
+    height: 400px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    border-radius: 10px;
 #knowMore {
     color: white;
     font-style: italic;
